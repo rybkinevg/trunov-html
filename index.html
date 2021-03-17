@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+        <div class="container">
+            <div class="topbar container-fix">
+                <ul class="topbar__social list--reset">
+                    <li class="topbar__social-item">
+                        <a class="topbar__social-link" href="#">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path class="st0"
+                                        d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="topbar__social-item">
+                        <a class="topbar__social-link" href="#">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="topbar__social-item">
+                        <a class="topbar__social-link" href="#">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <button class="header__search">Поиск</button>
+            </div>
+            <header class="header">
+                <div class="header__about container-fix">
+                    <div class="header__logo">
+                        <img src="./assets/img/logo.png" alt="Логотип" class="logo">
+                    </div>
+                    <div class="header__info">
+                        <h1 class="header__title">"Трунов, Айвар и партнёры"</h1>
+                        <div class="header__desc">Международная юридическая фирма, основанная в 2001 году</div>
+                    </div>
+                    <div class="header__contacts">
+                        <ul class="list--reset">
+                            <li class="header__phone">8 499 158 29 17</li>
+                            <li class="header__phone">8 499 158 29 17</li>
+                            <li class="header__phone">8 499 158 29 17</li>
+                        </ul>
+                        <div class="header__mail">
+                            info@trunov.com
+                        </div>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <div class="header__nav-list-wrapper">
+                        <button class="header__nav-close">Закрыть</button>
+                        <ul class="header__nav-list list--reset">
+                            <li class="header__nav-item has-submenu">
+                                <a href="#" class="header__nav-link">Пресс-центр</a>
+                                <button class="header__nav-open-submenu"><span></span></button>
+                                <ul class="submenu list--reset">
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Новости</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Новости СМИ</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Фотоархив</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Видеоархив</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item has-submenu">
+                                <a href="#" class="header__nav-link">Услуги</a>
+                                <button class="header__nav-open-submenu"><span></span></button>
+                                <ul class="submenu list--reset">
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Физическим лицам</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Юридическим лицам</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Адвокаты</a>
+                            </li>
+                            <li class="header__nav-item has-submenu">
+                                <a href="#" class="header__nav-link">Громкие дела</a>
+                                <button class="header__nav-open-submenu"><span></span></button>
+                                <ul class="submenu list--reset">
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Дела жертв авикатастроф</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Полицейские против подростка</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item has-submenu">
+                                <a href="#" class="header__nav-link">Информация</a>
+                                <button class="header__nav-open-submenu"><span></span></button>
+                                <ul class="submenu list--reset">
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Дела жертв авикатастроф</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#">Полицейские против подростка</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Вакансии</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header__nav-open">Меню</button>
+                </nav>
+            </header>
+            <main class="main">
+                <div class="row">
+                    <div class="col col-content">
+                        <section class="section main-news">
+                            Слайдер с важными новостями и анонсами
+                        </section>
+                        <section class="section management">
+                            <h2 class="section__title visually-hidden">Руководство</h2>
+                            <div class="row cols-2">
+                                <div class="col">
+                                    <div class="management__item">
+                                        <div class="management__img">
+                                            <img class="img" src="http://trunov.com/images/tr.png" alt="">
+                                        </div>
+                                        <div class="management__name">Трунов Игорь Леонидович</div>
+                                        <div class="management__position">Президент Международной юридической фирмы
+                                        </div>
+                                        <ul class="management__extra">
+                                            <li>Научные труды</li>
+                                            <li>Актуальные дела</li>
+                                            <li>Телеперадачи с участием</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="management__item">
+                                        <div class="management__speech">
+                                            Наша деятельность основывается на принципах законности, доступности,
+                                            добросовестности, профессионализме, конфиденциальности, приоритетности
+                                            предоставления юридической помощи на льготных условиях несовершеннолетним,
+                                            инвалидам и другим лицам, нуждающимся в помощи, и оказавшимся в трудной
+                                            жизненной ситуации
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row cols-2">
+                                <div class="col">
+                                    <div class="management__item managemetn-info">
+                                        <div class="management__img">
+                                            <img class="img" src="http://trunov.com/images/aivar.png" alt="">
+                                        </div>
+                                        <div class="management__name">Айвар Людмила Константиновна</div>
+                                        <div class="management__position">Первый заместитель Председателя президиума
+                                            Коллегии адвокатов
+                                        </div>
+                                        <ul class="management__extra">
+                                            <li>Научные труды</li>
+                                            <li>Актуальные дела</li>
+                                            <li>Телеперадачи с участием</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="management__item managemetn-speech">
+                                        <div class="management__speech">
+                                            Новые условия российской деятельности потребовали значительного роста объёма
+                                            юридической помощи гражданам и иным субъектам предпринимательской
+                                            деятельности
+                                            Основу стабильности репутации Коллегии в условиях формирования современных
+                                            рыночных отношениях, составляют: высококвалифицированная юридическая помощь
+                                            и тонкое понимание проблем клиентов
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section offices">
+                            <h2 class="section__title">Зарубежные представительства</h2>
+                            <div class="row cols-3">
+                                <div class="col">
+                                    <a href="#" class="offices__item">
+                                        <div class="offices__img">
+                                            <img class="img img--cover" src="./assets/img/logo.png" alt="">
+                                        </div>
+                                        <div class="offices__name">США</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section lawyers">
+                            <h2 class="section__title">Адвокаты</h2>
+                            <div class="row cols-4">
+                                <div class="col">
+                                    <a href="#" class="lawyers__item">
+                                        <div class="lawyers__img">
+                                            <img class="img img--cover"
+                                                src="https://trunov.com/img/aleksnet_document/d_15709.jpg" alt="">
+                                        </div>
+                                        <span class="lawyers__name">Матвеев Леонид Германович</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section bussiness">
+                            <h2 class="section__title">Юридический бизнес</h2>
+                            <div class="row cols-3">
+                                <div class="col">
+                                    <a href="#" class="bussiness__item">
+                                        <div class="bussiness__img">
+                                            <img class="img img--cover"
+                                                src="https://trunov.com/img/aleksnet_document/d_15722.jpg" alt="">
+                                        </div>
+                                        <div class="bussiness__title">Недвижимость за рубежом</div>
+                                        <div class="bussiness__desc">Сопровождение сделок с недвижимостью зарубежом
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="bussiness__item">
+                                        <div class="bussiness__img">
+                                            <img class="img img--cover"
+                                                src="https://trunov.com/img/aleksnet_document/d_15720.jpg" alt="">
+                                        </div>
+                                        <div class="bussiness__title">Ваш бизнес во Франции</div>
+                                        <div class="bussiness__desc">Организация бизнеса во Франции и получения
+                                            французского вида на жительство.
+                                        </div>
+                                    </a>
+                                </div>
+                        </section>
+                        <section class="section about">
+                            <div class="rus">
+                                <p>
+                                    Москва – это огромный мегаполис, в котором жизнь протекает достаточно быстро и
+                                    насыщается самыми разнообразными событиями. В такие моменты трудно заметить, как
+                                    можешь оказаться заложником определенных вызовов судьбы. Эти нестандартные ситуации
+                                    способны существенно изменить будущее, если не внести определенные грамотные и
+                                    своевременные коррективы. Истинными помощниками в таких вопросах являются адвокаты.
+                                    У каждого успешного человека, деловая активность которого находится на очень высоком
+                                    уровне, есть <b>собственный адвокат</b>, который всегда готов поддержать своего
+                                    клиента в самую трудную минуту. И если вы до сих пор не пользовались
+                                    квалифицированной <b>юридической помощью</b> – запомните, <b>адвокат</b> должен быть
+                                    у каждого человека, как и врач и парикмахер. </p>
+
+                                <p> <b>В таком случае вы можете абсолютно справедливо спросить:</b> кому же доверить
+                                    свои деликатные вопросы? Ведь сейчас <b>адвокаты</b> встречаются на каждом шагу, и
+                                    не хочется стать жертвой непрофессионального подхода к решению жизненно важных
+                                    ситуаций. Наша <b>коллегия адвокатов</b> полностью согласна с таким мнением. Именно
+                                    поэтому в своих рядах мы собрали самые светлые юридические умы нашего города,
+                                    которые имеют достаточно высокий профессиональный уровень. Каждый <b>адвокат</b>
+                                    нашей коллегии – это истинный профессионал, за плечами которого как серьезная
+                                    научно-теоретическая подготовка, так и весьма обширная практическая деятельность,
+                                    что положительно сказывается на успешности проведения дел. Наша <b>коллегия
+                                        адвокатов</b> – это определенно осознанный и перспективный выбор. </p>
+
+                                <p>Мы знаем, что периодически квалифицированная <b>юридическая помощь</b> нужна всем и
+                                    каждому. Именно поэтому наша <b>коллегия адвокатов</b> осуществляет полноценную
+                                    работу как с <a href="/uslugi/fizicheskim_licam/">физическими лицами</a>, так и с <a
+                                        href="/uslugi/juridicheskim_licam/">юридическими лицами</a>. В нашем штате
+                                    каждый отдельный <b>адвокат</b> специализируется на каких-то конкретных отраслях
+                                    права: <a href="/uslugi/fizicheskim_licam/ugolovnoe_delo/">уголовные</a> и
+                                    административные дела, хозяйственные и гражданские процессы, <a
+                                        href="/uslugi/fizicheskim_licam/zhilischnye_spory/">жилищные</a> и <a
+                                        href="/uslugi/fizicheskim_licam/semejnye_spory/">семейные споры</a> и т.д. Наша
+                                    Московская <b>коллегия адвокатов</b> ввела такое разграничение, для того чтобы наши
+                                    клиенты получали наиболее качественную юридическую поддержку. Адвокаты, которые
+                                    досконально знают каждую букву законов своей непосредственной сферы деятельности –
+                                    это наш принцип. И это именно то, как должен работать настоящий <b><a
+                                            href="/advocats/">профессиональный адвокат</a></b>. </p>
+
+                                <p>В своей работе наша <b>коллегия адвокатов</b> руководствуется тем, что мы гарантируем
+                                    полную конфиденциальность тех сведений, которые становятся нам известными в процессе
+                                    работы с нашими клиентами. <b><a href="/advocats/">Адвокаты</a></b> должны следовать
+                                    интересам своих доверителей, оказывать им комплексную <b>юридическую помощь</b> и
+                                    быть настоящими советниками. Каждый наш <b>адвокат</b> понимает всю важность
+                                    возложенной на него миссии помогать людям в трудные моменты их жизни. Более того,
+                                    наша <b>коллегия адвокатов</b> абсолютно уверена, что не существует неразрешаемых
+                                    вопросов и безвыходных ситуаций. </p>
+
+                                <p>Мы никогда не откажем в помощи клиенту, всегда выслушаем его до конца и совместными
+                                    усилиями найдем общее правильное решение. Клиенту, которому требуется <b><a
+                                            href="/uslugi/fizicheskim_licam/">юридическая помощь</a></b>, трудно
+                                    обойтись без профессионального адвоката. Да и адвокат ничего не сможет сделать без
+                                    клиента. Поэтому вы всегда будете чувствовать нашу настоящую и прочную поддержку, мы
+                                    всегда будем рядом. <a href="/uslugi/fizicheskim_licam/">Наши адвокаты</a> способны
+                                    и готовы представить ваши интересы абсолютно во всех направлениях деятельности и
+                                    инстанциях. Поэтому, никогда не спешите заранее опускать руки и поднимать белый
+                                    флаг, мы с вами нашей совместной работой оставим эту роскошь для другой стороны.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="col col-sidebar">
+                        <section class="section news">
+                            <h2 class="section__title">
+                                Новости
+                            </h2>
+                        </section>
+                        <section class="section news-smi">
+                            <h2 class="section__title">
+                                Новости СМИ
+                            </h2>
+                        </section>
+                        <section class="section anons">
+                            <h2 class="section__title">
+                                Анонсы
+                            </h2>
+                        </section>
+                        <section class="section works">
+                            <h2 class="section__title">
+                                Научные публикации
+                            </h2>
+                        </section>
+                        <section class="section books">
+                            <h2 class="section__title">
+                                Книги
+                            </h2>
+                        </section>
+                    </aside>
+                </div>
+            </main>
+            <footer class="footer">
+                <section class="section partners">
+                    Партнёры
+                </section>
+                <nav class="footer__nav">
+                    Навигация
+                </nav>
+
+            </footer>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

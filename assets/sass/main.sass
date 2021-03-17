@@ -1,0 +1,117 @@
+@import vars
+@import normalize
+
+*
+    box-sizing: border-box
+
+body
+    font-family: sans-serif
+    color: $text-color
+
+a
+    text-decoration: none
+    color: inherit
+
+.img
+    display: block
+
+    &--cover
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.site-wrapper
+    position: relative
+    background-image: url('../img/body.png')
+    padding: 30px 0
+
+    @media (max-width: 1200px)
+        padding: 0
+
+.container
+    max-width: $width
+    margin: 0 auto
+    padding-left: $gap
+    padding-right: $gap
+    background-color: $main
+
+    &-fix
+        margin-left: -$gap
+        margin-right: -$gap
+
+.list--reset
+    margin: 0
+    padding: 0
+    list-style: none
+
+.main
+    padding: 30px 0
+
+.section
+    margin-bottom: 30px
+
+.icon
+    transition: fill $transition
+    fill: $secondary
+
+    &:hover
+        fill: $accent
+
+    & svg
+        width: 100%
+        height: 100%
+
+.row
+    display: flex
+    flex-wrap: wrap
+    margin-left: ($gap / 2) * -1
+    margin-right: ($gap / 2) * -1
+
+    &.cols-1 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 1))
+    &.cols-2 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 2))
+    &.cols-3 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 3))
+    &.cols-4 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 4))
+    &.cols-5 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 5))
+    &.cols-6 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 6))
+    &.cols-7 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 7))
+    &.cols-8 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 8))
+    &.cols-9 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 9))
+    &.cols-10 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 10))
+    &.cols-11 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 11))
+    &.cols-12 .col
+        flex: 0 0 calc((100% / 12) * calc(12 / 12))
+
+.col
+    padding-left: ($gap / 2)
+    padding-right: ($gap / 2)
+    margin-bottom: $gap
+
+    &-content
+        width: 66.66666667%
+
+        @media (max-width: 900px)
+            width: 100%
+
+    &-sidebar
+        width: 33.33333333%
+
+        @media (max-width: 900px)
+            display: none
+
+@import topbar
+@import header
+@import offices
+@import lawyers
+@import bussiness
+@import management

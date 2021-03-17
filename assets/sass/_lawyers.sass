@@ -1,0 +1,40 @@
+.lawyers
+    & .row
+        // justify-content: space-around
+
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        border: 1px solid $border
+        transition: background $transition
+        position: relative
+
+        &:hover .lawyers__name
+            height: 100%
+            opacity: 1
+
+    &__name
+        position: absolute
+        bottom: 0
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        width: 100%
+        height: 0
+        padding: 10px
+        opacity: 0
+        background-color: $secondary
+        transition: height $transition, opacity $transition
+
+        @media (max-width: 900px)
+            position: relative
+            opacity: 1
+            height: auto
+
+    &__img
+        width: 180px
+        height: 140px
