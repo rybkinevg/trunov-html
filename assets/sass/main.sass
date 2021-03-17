@@ -6,7 +6,7 @@
 
 body
     font-family: sans-serif
-    color: $text-color
+    color: $color-text
 
 a
     text-decoration: none
@@ -25,7 +25,7 @@ a
     background-image: url('../img/body.png')
     padding: 30px 0
 
-    @media (max-width: 1200px)
+    @media (max-width: $width)
         padding: 0
 
 .container
@@ -33,7 +33,7 @@ a
     margin: 0 auto
     padding-left: $gap
     padding-right: $gap
-    background-color: $main
+    background-color: $color-bg
 
     &-fix
         margin-left: -$gap
@@ -44,6 +44,44 @@ a
     padding: 0
     list-style: none
 
+.btn--reset
+    padding: 0
+    border: none
+    background: transparent
+    outline: none
+    appearance: none
+    cursor: pointer
+
+.blockquote
+    position: relative
+    display: flex
+    align-items: center
+    margin: 0
+
+    &::before
+        content: "\201C"
+        font-family: sans-serif
+        position: absolute
+        font-size: 60px
+        left: -2px
+        top: 23px
+        line-height: 0
+        color: $color-main-secondary
+
+    &::after
+        content: "\201D"
+        font-family: sans-serif
+        position: absolute
+        font-size: 60px
+        right: -2px
+        bottom: -9px
+        line-height: 0
+        color: $color-main-secondary
+
+    &__text
+        padding: 20px
+        text-align: justify
+
 .main
     padding: 30px 0
 
@@ -52,10 +90,10 @@ a
 
 .icon
     transition: fill $transition
-    fill: $secondary
+    fill: $color-main-secondary
 
     &:hover
-        fill: $accent
+        fill: $color-main
 
     & svg
         width: 100%
@@ -111,6 +149,7 @@ a
 
 @import topbar
 @import header
+@import menu
 @import offices
 @import lawyers
 @import bussiness

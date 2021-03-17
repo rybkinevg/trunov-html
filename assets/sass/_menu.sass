@@ -1,0 +1,150 @@
+// Header Nav
+
+.nav
+    display: flex
+    margin: 20px 0
+    color: $color-text
+
+    @media (max-width: 900px)
+        margin: 0
+
+    &__inner
+        width: 100%
+        background-color: $color-bg
+        transition: transform $transition
+        z-index: 1
+
+        @media (max-width: 900px)
+            transform: translateX(-100%)
+            position: fixed
+            top: 0
+            left: 0
+            height: 100vh
+            overflow-x: auto
+
+        &.open
+            transform: translateX(0)
+
+    &__header
+        display: none
+
+        @media (max-width: 900px)
+            display: flex
+            align-items: center
+            background: $color-bg-secondary
+
+    &__btn--close
+        width: 60px
+        height: 60px
+        margin-right: 20px
+
+    &__title
+        margin: 0
+
+    &__list
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+        @media (max-width: 900px)
+            flex-direction: column
+
+    &__item
+        position: relative
+        line-height: 60px
+        flex: 1 1 auto
+        text-align: center
+        border: 1px solid $color-bg-secondary
+        transition: background $transition
+
+        @media (max-width: 900px)
+            text-align: left
+            border: none
+            border-bottom: 1px solid $color-bg-secondary
+
+        &:not(:last-child)
+            border-right: none
+
+        &:hover
+            background: $color-main
+            color: $color-bg
+
+            @media (max-width: 900px)
+                background: inherit
+                color: inherit
+
+        &:hover .submenu
+            opacity: 1
+            transform: scaleY(1)
+
+    &__link
+        display: block
+        text-decoration: none
+        color: inherit
+        padding: 0 20px
+
+    &__btn--open,
+    &__btn--close
+        display: none
+
+        @media (max-width: 900px)
+            display: block
+
+    &__btn--submenu
+        display: none
+
+        @media (max-width: 900px)
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top: 0
+            right: 0
+            width: 60px
+            height: 60px
+
+.submenu
+    position: absolute
+    background: $color-bg
+    color: $color-text
+    left: -1px
+    top: 100%
+    z-index: 5
+    width: 150%
+    opacity: 0
+    transform: scaleY(0)
+    transform-origin: 0 0
+    transition: opacity $transition, transform $transition
+    border: 1px solid $color-bg-secondary
+
+    @media (max-width: 900px)
+        border: none
+        position: relative
+        width: 100%
+        height: 0
+
+    &.open
+        opacity: 1
+        transform: scaleY(1)
+        height: auto
+
+    &__item
+        text-align: left
+        transition: background $transition
+
+        &:not(:last-child)
+            border-bottom: 1px solid $color-bg-secondary
+
+        &:hover
+            color: $color-main
+
+    &__link
+        display: block
+        color: inherit
+        text-decoration: none
+        padding: 0 20px
+
+        &::before
+            @media (max-width: 900px)
+                content: '-'
+                margin-right: 20px

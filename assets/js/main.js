@@ -1,8 +1,8 @@
-const openMenuBtn = document.querySelector('.header__nav-open');
-const closeMenuBtn = document.querySelector('.header__nav-close');
-const subMenuBtn = document.querySelectorAll('.header__nav-open-submenu');
+const openMenuBtn = document.querySelector('.nav__btn--open');
+const closeMenuBtn = document.querySelector('.nav__btn--close');
+const subMenuBtn = document.querySelectorAll('.nav__btn--submenu');
 const subMenu = document.querySelectorAll('.submenu');
-const menu = document.querySelector('.header__nav-list-wrapper');
+const menu = document.querySelector('.nav__inner');
 
 openMenuBtn.addEventListener('click', () => {
 
