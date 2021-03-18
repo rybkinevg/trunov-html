@@ -11,10 +11,6 @@
         transition: background $transition
         position: relative
 
-        &:hover .lawyers__name
-            height: 100%
-            opacity: 1
-
     &__name
         position: absolute
         bottom: 0
@@ -38,3 +34,8 @@
     &__img
         width: 180px
         height: 140px
+
+.no-touch
+    .lawyers__item:hover .lawyers__name
+        height: 100%
+        opacity: 1
