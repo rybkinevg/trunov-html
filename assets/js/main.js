@@ -33,6 +33,11 @@ if (isMobile) {
     body.classList.add('no-touch');
 }
 
+Ellipsis({
+    lines: 3,
+    break_word: false
+});
+
 $(document).ready(function () {
     $('.main-news__slider').slick();
     $('.partners__slider').slick({
