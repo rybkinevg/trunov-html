@@ -34,5 +34,30 @@ if (isMobile) {
 }
 
 $(document).ready(function () {
-    $('.your-class').slick();
+    $('.main-news__slider').slick();
+    $('.partners__slider').slick({
+        slidesToShow: 4,
+        dots: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+        ]
+    });
 });
